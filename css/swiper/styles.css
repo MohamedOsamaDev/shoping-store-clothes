@@ -1,0 +1,147 @@
+
+
+
+
+
+/*=============== CARD ===============*/
+
+.catogory .containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+
+}
+
+.card__container {
+overflow: hidden;
+  max-height: 500px;
+  width: 100%;
+}
+
+.card__content {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.card__article {
+ width: 200px; /* Remove after adding swiper js */
+  height: 100%;
+  overflow: hidden;
+}
+
+.card__image {
+width: 100%;
+margin: auto;
+
+}
+.card__image img {
+  max-width: 100%;
+  position: relative;
+}
+
+.card__image img::before {
+  content:'';
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card__article  .info {
+  padding: 10px;
+} 
+.card__article  .info h2 {
+font-size: 14px;
+color: rgba(87, 84, 84, 0.703);
+font-weight: 400;
+}
+.card__article  .info p {
+  font-size: 14px;
+  color: rgba(87, 84, 84, 0.703);
+  font-weight: 400;
+}
+
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: initial;
+  height: initial;
+  font-size: 3rem;
+  color: var(--second-color);
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 0;
+  opacity: 0;/*1*/
+}
+
+.swiper-button-next {
+  right: 0;
+  opacity: 0;/*1*/
+}
+
+.swiper-pagination-bullet {
+  background-color: hsl(212, 32%, 40%);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--second-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  
+
+  .swiper-button-prev {
+    left: -1rem;
+  }
+  .swiper-button-next {
+    right: -1rem;
+  }
+}
