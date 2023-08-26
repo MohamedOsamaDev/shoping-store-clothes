@@ -422,7 +422,7 @@ header .container  .right a i:hover {
 .getlook .title {
     margin: 20px auto;
     text-align: center;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 .getlook .main-boxes {
     width: 90%;
